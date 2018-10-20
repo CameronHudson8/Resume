@@ -1,0 +1,206 @@
+\documentclass[12pt]{res} % This warning is a bug: https://tex.stackexchange.com/questions/172649/strange-errors-and-error-changes
+\usepackage{hyperref} 
+% \parindent{1cm}
+
+% FONTS
+% !TEX program = xelatex
+\usepackage{fontspec}
+\defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+\setmainfont{Roboto Slab}
+\setmonofont{Roboto Mono}
+
+% MARGINS
+\usepackage[left=0.7in, right=1.3in, top=0.5in, bottom=1.0in, centering]{geometry}
+\usepackage{enumitem}
+\setlength{\leftskip}{-0.30in}
+
+% IMAGES
+\usepackage{graphbox} %loads graphicx package
+\graphicspath{ {./} }
+
+% COLUMNS
+\usepackage{multicol}
+
+\begin{document}
+
+% Center the content vertically on the page
+\topskip0pt
+\vspace*{\fill}
+
+    \name{Cameron Hudson}
+    \address{
+        \includegraphics[align=c, width=2.0ex]{New_Logo_Gmail} CameronHudson8@gmail.com
+        \hspace{5pt}
+        \includegraphics[align=c, width=2.0ex]{icons8-phone-50} 484-888-0588
+        \hspace{5pt}
+        \includegraphics[align=c, width=2.0ex]{location-mark} Mountain View, CA
+    }
+
+    \opening
+    \vspace{-30pt}
+
+    \begin{center}
+        \hspace{-40pt}
+        \href{
+            http://www.cameronhudson.info
+        }{
+            \includegraphics[align=c, height=2.0ex]{favicon} CameronHudson.info
+        }
+        \hspace{5pt} 
+        \href{
+            http://www.linkedin.com/in/CameronHudson8
+        }{
+            \includegraphics[align=c, height=2.0ex]{LinkedinLogoCropped} linkedin.com/in/CameronHudson8
+        }
+        \hspace{5pt}
+        \href{
+            http://www.github.com/CameronHudson8
+        }{
+            \includegraphics[align=c, height=2.0ex]{GitHub-Mark-120px-plus} github.com/CameronHudson8
+        }
+    \end{center}
+
+    \vspace{-24pt}
+
+    \begin{resume}
+
+        % Adjusting \verb+\leftmargin+ via \verb+enumitem+ options:
+        \begin{itemize}
+            \setlength{\itemindent}{-0.25in}
+
+            \section{Summary}
+            \itemsep0em 
+            \item Chemical Engineer turned Software Engineer after witnessing impact of software on process design.
+            \item Amplifies staff productivity by building applications to automate work and prevent errors.
+            \item Experience with full-stack web application design as well as low-level computer systems. 
+            \item Self-motivated and goal-oriented. Trusted to complete project objectives within defined time frame.									
+        \end{itemize}
+        \vspace{-12pt}
+
+        \section{Education}
+            
+            \employer{Carnegie Mellon University, Silicon Valley}
+            \title{\bfseries MS, Software Engineering}
+            \dates{2018 Aug - 2019 Dec}
+            \location{Mountain View, CA}
+            \begin{position}
+                \vspace{-14pt}
+                % GPA: Pending
+                \begin{itemize}
+                \setlength{\itemindent}{-0.50in}
+                \itemsep0em
+                \item Designed \texttt{malloc} function from scratch in the \texttt{C} language to gain valuable hardware insight. 
+                \item Collaborated in a 4-person group to design a web app for communication during emergency situations.
+                \item Constructed full-stack chatroom web application with \texttt{MongoDB} database and \texttt{Angular} client interface.
+                \end{itemize}
+            \end{position}
+            \vspace{-10pt}
+
+            \employer{Johns Hopkins University}
+            \title{\bfseries BS, Chemical and Biomolecular Engineering}
+            \dates{2008 Sep - 2012 May}
+            \location{Baltimore, MD}
+            \begin{position}
+                \vspace{-14pt}
+                % GPA: 3.39
+                % \begin{itemize}
+                % \item Item 1
+                % \item Item 2
+                % \item Item 3
+                % \end{itemize}
+            \end{position}
+            \vspace{-12pt}
+
+        \section{Professional Experience}
+        
+            \employer{Axens}
+            \title{\bfseries Process Engineer 2}
+            \dates{2016 Jul - 2017 May}
+            \location{Princeton, NJ}
+            \begin{position}
+                Responsibilities:
+                \begin{itemize}
+                \setlength{\itemindent}{-0.50in}
+                \itemsep0em
+                \item Enhanced Axens' proprietary design software, reducing man-hour costs for all future projects.
+                \item Implemented Axens's design practices while performing Basic Engineering of sulfur treatment plants.
+                \item Simulated sulfur treatment process with PRO/II software and calculated equipment design parameters.
+                \end{itemize}
+            \end{position}
+            \vspace{-10pt}
+
+            \employer{Amec Foster Wheeler}
+            \title{\bfseries Process Engineer 1}
+            \dates{2013 Jan - 2016 Mar}
+            \location{Hampton Township, NJ}
+            \begin{position}
+                Responsibilities:
+                \begin{itemize}
+                    \setlength{\itemindent}{-0.50in}
+                    \itemsep0em 
+                    \item As lead engineer, team completed Front-End Engineering of customer's requirements on schedule.	
+                    \item Represented company at HAZOP/LOPA safety reviews of Raw Water and Steam Generation units.									
+                    \item Reviewed design calculations of two peer engineers for accuracy and consistency.									
+                    \item Leveraged Visual Basic to compute the Heat and Material Balances (HMBs) for design of all equipment.				
+                \end{itemize}
+            \end{position}
+            \vspace{-12pt}
+
+            \section{Skills}
+            \vspace{-4pt}
+
+            \begin{multicols}{3}
+
+            % \begin{itemize}
+
+            \subsubsection{Programming Languages}
+            \vspace{-22pt}
+            C, JavaScript, Java, PHP, Python
+            \vspace{-36pt}
+
+            \subsubsection{Markup Languages}
+            \vspace{-22pt}
+            HTML, CSS, \LaTeX
+            \vspace{-36pt}
+
+            \subsubsection{Frameworks}
+            \vspace{-22pt}
+            Node.js, Angular, Laravel
+            \vspace{-28pt}
+
+            \subsubsection{Databases}
+            \vspace{-22pt}
+            MySQL, MongoDB
+            \vspace{-28pt}
+
+            \subsubsection{Simulators}
+            \vspace{-22pt}
+            PRO/II, ProMax (TSWEET), KG Tower
+            \vspace{-28pt}
+
+            \subsubsection{Other Interests}
+            \vspace{-22pt}
+            Science Fiction, Hiking, Board Games
+            % \vspace{-28pt}
+
+            % \end{itemize}
+            \vspace{-12pt}
+
+        \end{multicols}
+
+        \vspace{-24pt}
+
+            \section{Certifications} 
+            \begin{itemize}
+            \setlength{\itemindent}{-0.65in}
+            \itemsep0em
+            \item 2017 Nov: National Council of Examiners for Engineering and Surveying, Engineer-In-Training
+            \item 2017 Oct: American Society for Quality, Six Sigma Green Belt
+            \end{itemize}
+            \vspace{-12pt}
+
+    \end{resume}
+
+\vspace*{\fill}
+
+\end{document}
