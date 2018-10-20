@@ -1,6 +1,6 @@
 \documentclass[12pt]{res} % This warning is a bug: https://tex.stackexchange.com/questions/172649/strange-errors-and-error-changes
 \usepackage{hyperref} 
-% \parindent{1cm}
+% \parindent{1cm} 
 
 % FONTS
 % !TEX program = xelatex
@@ -8,10 +8,11 @@
 \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
 \setmainfont{Roboto Slab}
 \setmonofont{Roboto Mono}
+\hyphenchar\font=-1
 
 % MARGINS
-\usepackage[left=0.7in, right=1.3in, top=0.5in, bottom=1.0in, centering]{geometry}
-\usepackage{enumitem}
+\usepackage[left=1.5cm, right=3.0cm, top=2.0cm, bottom=2.0cm]{geometry}
+\usepackage{enumitem} 
 \setlength{\leftskip}{-0.30in}
 
 % IMAGES
@@ -21,11 +22,14 @@
 % COLUMNS
 \usepackage{multicol}
 
+% SECTION INDENTATION
+\newsectionwidth{2.5cm}
+
 \begin{document}
 
 % Center the content vertically on the page
-\topskip0pt
-\vspace*{\fill}
+% \topskip0pt
+% \vspace*{\fill}
 
     \name{Cameron Hudson}
     \address{
@@ -40,13 +44,13 @@
     \vspace{-30pt}
 
     \begin{center}
-        \hspace{-40pt}
-        \href{
-            http://www.cameronhudson.info
-        }{
-            \includegraphics[align=c, height=2.0ex]{images/personal-site-favicon} CameronHudson.info
-        }
-        \hspace{5pt} 
+        \hspace{-70pt}
+        % \href{
+        %     http://www.cameronhudson.info
+        % }{
+        %     \includegraphics[align=c, height=2.0ex]{images/personal-site-favicon} CameronHudson.info
+        % }
+        % \hspace{5pt} 
         \href{
             http://www.linkedin.com/in/CameronHudson8
         }{
@@ -63,105 +67,70 @@
     \vspace{-24pt}
 
     \begin{resume}
+ 
+      \section{Summary}
+      Software Engineering master's student seeking Summer 2019 internship in web/software development.
+      Passionate about software-driven problem solving.
+      Broad interest and experience spanning full-stack web applications down to microcontrollers and sensors.
+      % Prioritizes communciation with supervisors and coworkers.
+      \vspace{-12pt}
 
-        % Adjusting \verb+\leftmargin+ via \verb+enumitem+ options:
-        \begin{itemize}
-            \setlength{\itemindent}{-0.25in}
+      \section{Education}
 
-            \section{Summary}
-            \itemsep0em 
-            \item Chemical Engineer turned Software Engineer after witnessing impact of software on process design.
-            \item Amplifies staff productivity by building applications to automate work and prevent errors.
-            \item Experience with full-stack web application design as well as low-level computer systems. 
-            \item Self-motivated and goal-oriented. Trusted to complete project objectives within defined time frame.									
-        \end{itemize}
-        \vspace{-12pt}
+          \employer{Carnegie Mellon University, Silicon Valley}
+          \title{\textbf{MS, Software Engineering}}
+          \dates{Aug 2018 - Dec 2019}
+          \location{Mountain View, CA}
+          \begin{position}
+              \vspace{-14pt}
+              % Relevant Courses:
+              \begin{itemize}[leftmargin=-0.4cm]
+              \itemsep0em
+              \item Foundations of Software Engineering: Best practices of team collaboration and development.
+              \item Foundations of Computer Systems: Computer architecture and its interaction with software.
+              \item Mobile Hardware: Self-directed projects involving microcontroller-based hardware.
+              \end{itemize}
+          \end{position}
+          \vspace{-12pt}
 
-        \section{Education}
-            
-            \employer{Carnegie Mellon University, Silicon Valley}
-            \title{\bfseries MS, Software Engineering}
-            \dates{2018 Aug - 2019 Dec}
-            \location{Mountain View, CA}
-            \begin{position}
-                \vspace{-14pt}
-                % GPA: Pending
-                \begin{itemize}
-                \setlength{\itemindent}{-0.50in}
-                \itemsep0em
-                \item Designed \texttt{malloc} function from scratch in the \texttt{C} language to gain valuable hardware insight. 
-                \item Collaborated in a 4-person group to design a web app for communication during emergency situations.
-                \item Constructed full-stack chatroom web application with \texttt{MongoDB} database and \texttt{Angular} client interface.
-                \end{itemize}
-            \end{position}
-            \vspace{-10pt}
+          \employer{Johns Hopkins University}
+          \title{\textbf{BS, Chemical and Biomolecular Engineering}}
+          \dates{Sep 2008 - May 2012}
+          \location{Baltimore, MD}
+          \begin{position}
+              \vspace{-14pt}
+              % GPA: 3.39
+              % \begin{itemize}
+              % \item Item 1
+              % \item Item 2
+              % \item Item 3
+              % \end{itemize}
+          \end{position}
+          \vspace{-12pt}
 
-            \employer{Johns Hopkins University}
-            \title{\bfseries BS, Chemical and Biomolecular Engineering}
-            \dates{2008 Sep - 2012 May}
-            \location{Baltimore, MD}
-            \begin{position}
-                \vspace{-14pt}
-                % GPA: 3.39
-                % \begin{itemize}
-                % \item Item 1
-                % \item Item 2
-                % \item Item 3
-                % \end{itemize}
-            \end{position}
-            \vspace{-12pt}
+        \section{Academic Projects}
+          \begin{itemize}[leftmargin=-0.4cm]
+          \itemsep0em
+          \item Built web app for emergency communication using object-oriented analysis, design, and testing.
+          \item Gained understanding of software-hardware interaction during projects in x86\_64 assembly.
+          \item Constructed full-stack chatroom web app with MongoDB database and Angular client interface.
+          \end{itemize}
+          \vspace{-12pt}
 
-        \section{Professional Experience}
-        
-            \employer{Axens}
-            \title{\bfseries Process Engineer 2}
-            \dates{2016 Jul - 2017 May}
-            \location{Princeton, NJ}
-            \begin{position}
-                Responsibilities:
-                \begin{itemize}
-                \setlength{\itemindent}{-0.50in}
-                \itemsep0em
-                \item Enhanced Axens' proprietary design software, reducing man-hour costs for all future projects.
-                \item Implemented Axens's design practices while performing Basic Engineering of sulfur treatment plants.
-                \item Simulated sulfur treatment process with PRO/II software and calculated equipment design parameters.
-                \end{itemize}
-            \end{position}
-            \vspace{-10pt}
+        \section{Skills and Interests}
+          \vspace{3pt}
 
-            \employer{Amec Foster Wheeler}
-            \title{\bfseries Process Engineer 1}
-            \dates{2013 Jan - 2016 Mar}
-            \location{Hampton Township, NJ}
-            \begin{position}
-                Responsibilities:
-                \begin{itemize}
-                    \setlength{\itemindent}{-0.50in}
-                    \itemsep0em 
-                    \item As lead engineer, team completed Front-End Engineering of customer's requirements on schedule.	
-                    \item Represented company at HAZOP/LOPA safety reviews of Raw Water and Steam Generation units.									
-                    \item Reviewed design calculations of two peer engineers for accuracy and consistency.									
-                    \item Leveraged Visual Basic to compute the Heat and Material Balances (HMBs) for design of all equipment.				
-                \end{itemize}
-            \end{position}
-            \vspace{-12pt}
-
-            \section{Skills}
-            \vspace{-4pt}
-
-            \begin{multicols}{3}
-
-            % \begin{itemize}
+          \begin{multicols}{3}
 
             \subsubsection{Programming Languages}
             \vspace{-22pt}
-            C, JavaScript, Java, PHP, Python
-            \vspace{-36pt}
+            C, JavaScript, Java, PHP
+            \vspace{-28pt}
 
             \subsubsection{Markup Languages}
             \vspace{-22pt}
             HTML, CSS, \LaTeX
-            \vspace{-36pt}
+            \vspace{-28pt}
 
             \subsubsection{Frameworks}
             \vspace{-22pt}
@@ -175,29 +144,61 @@
 
             \subsubsection{Simulators}
             \vspace{-22pt}
-            PRO/II, ProMax (TSWEET), KG Tower
+            PRO/II, ProMax, KG Tower
             \vspace{-28pt}
 
             \subsubsection{Other Interests}
             \vspace{-22pt}
-            Science Fiction, Hiking, Board Games
+            SciFi, Hiking, Board Games
             % \vspace{-28pt}
 
             % \end{itemize}
             \vspace{-12pt}
 
-        \end{multicols}
-
+          \end{multicols}
         \vspace{-24pt}
 
-            \section{Certifications} 
-            \begin{itemize}
-            \setlength{\itemindent}{-0.65in}
-            \itemsep0em
-            \item 2017 Nov: National Council of Examiners for Engineering and Surveying, Engineer-In-Training
-            \item 2017 Oct: American Society for Quality, Six Sigma Green Belt
-            \end{itemize}
-            \vspace{-12pt}
+      \section{Professional Experience}
+        \employer{Axens (Petroleum Desulfurization)}
+        \title{\textbf{Process Engineer 2}}
+        \dates{Jul 2016 - May 2017}
+        \location{Princeton, NJ}
+        \begin{position}
+          \vspace{-14pt}
+          \begin{itemize}[leftmargin=-0.4cm]
+          % \setlength{\itemindent}{-0.50in}
+          \itemsep0em
+          \item Enhanced Axens' proprietary design software, reducing man-hour costs for all future projects.
+          \item Implemented Axens's design practices while performing Basic Engineering.
+          \item Simulated sulfur treatment process with PRO/II and calculated equipment design parameters.
+          \end{itemize}
+        \end{position}
+        \vspace{-10pt}
+
+        \employer{Amec Foster Wheeler (Engineering Contractor)}
+        \title{\textbf{Process Engineer 1}}
+        \dates{Jan 2013 - Mar 2016}
+        \location{Hampton Township, NJ}
+        \begin{position}
+          \vspace{-14pt}
+          \begin{itemize}[leftmargin=-0.4cm]
+              % \setlength{\itemindent}{-0.50in}
+              \itemsep0em 
+              \item Led team of 3 to complete Front-End Engineering of customer's requirements on schedule.	
+              \item Represented company at HAZOP/LOPA safety reviews of Raw Water and Steam Generation units.
+              % \item Reviewed design calculations of two peer engineers for accuracy and consistency.
+              \item Leveraged Visual Basic to compute the Heat and Material Balances (HMBs) for equipment design.				
+          \end{itemize}
+        \end{position}
+        \vspace{-12pt}
+
+      \section{Certifications} 
+        \begin{itemize}[leftmargin=-0.4cm]
+        \itemsep0em
+        \item Nov 2017: National Council of Examiners for Engineering and Surveying, Engineer-In-Training
+        \item Oct 2017: American Society for Quality, Six Sigma Green Belt
+        \end{itemize}
+        \vspace{-12pt}
 
     \end{resume}
 
