@@ -11,7 +11,10 @@
 \hyphenchar\font=-1
 
 % MARGINS
-\usepackage[left=1.5cm, right=3.0cm, top=2.0cm, bottom=2.0cm]{geometry}
+% \usepackage[left=1.0cm, right=1.0cm, top=1.0cm, bottom=1.0cm]{geometry}
+\usepackage{geometry}
+\geometry{showframe=true,headheight=1cm}
+\geometry{margin=1cm,bottom=1cm}
 \usepackage{enumitem} 
 \setlength{\leftskip}{-0.30in}
 
@@ -23,7 +26,7 @@
 \usepackage{multicol}
 
 % SECTION INDENTATION
-\newsectionwidth{2.5cm}
+\newsectionwidth{2.0cm}
 
 \begin{document}
 
@@ -87,8 +90,7 @@
               \begin{itemize}[leftmargin=-0.4cm]
               \itemsep0em
               \item Foundations of Software Engineering: Best practices of team collaboration and development.
-              \item Foundations of Computer Systems: Computer architecture and its interaction with software.
-              \item Mobile Hardware: Self-directed projects involving microcontroller-based hardware.
+              \item Foundations of Computer Systems: Low-level software; optimizing for specific architectures.
               \end{itemize}
           \end{position}
           \vspace{-12pt}
@@ -112,9 +114,9 @@
         \section{Academic Projects}
           \begin{itemize}[leftmargin=-0.4cm]
           \itemsep0em
-          \item Emergency Social Network: Built web app using object-oriented analysis, design, and testing.
-          \item Computer Systems Labs: Optimized C programs based on their resulting x86\_64 assembly code.
-          \item Chatroom App: Constructed web app from MEAN stack (MongoDB, Express.js, Angular 4, Node.js).
+          \item Social Network for Emergencies: Built mobile-friendly web app for use during disasters. Consisted of MongoDB, ExpressJS, Angular 7, and NodeJS (MEAN stack). Included RESTful API and JSON Web Tokens, as well as WebSockets for realtime updates. Employed design patterns such as factory method, facade, and observer. Applied Mocha for test-driven development (TDD).
+          \item Architecture Lab: Optimized C programs by using the Gem5 simulator to identify cycles wasted by a pipelined processor, interpret the associated assembly code, and refactor the original C code for speed and efficiency.
+          \item Malloc Lab: Developed package (in C) capable of performing memory allocation and deallocation similar to malloc. Used C structs and unions to create compact data structures resilient to memory fragmentation and conducive to rapid allocation and freeing.
           \end{itemize}
           \vspace{-12pt}
 
@@ -125,7 +127,7 @@
 
             \subsubsection{Programming Languages}
             \vspace{-22pt}
-            C, JavaScript, Java, PHP
+            C, JavaScript, Java
             \vspace{-28pt}
 
             \subsubsection{Markup Languages}
@@ -135,7 +137,7 @@
 
             \subsubsection{Frameworks}
             \vspace{-22pt}
-            Angular 4, Laravel
+            Angular 7, Laravel
             \vspace{-28pt}
 
             \subsubsection{Databases}
@@ -169,9 +171,8 @@
           \begin{itemize}[leftmargin=-0.4cm]
           % \setlength{\itemindent}{-0.50in}
           \itemsep0em
-          \item Enhanced Axens' proprietary design software, reducing man-hour costs for all future projects.
-          % \item Implemented Axens's design practices while performing Basic Engineering.
-          \item Simulated sulfur treatment process with PRO/II and calculated equipment design parameters.
+          \item Automated calculations critical to the design using Visual Basic, thereby increasing safety, reducing error potential, and decreasing man-hour costs for all future projects.
+          \item Developed script to automate the assembly of the final design documents for delivery to the client, saving precious man-hours and reducing stress at project end.
           \end{itemize}
         \end{position}
         \vspace{-10pt}
@@ -183,12 +184,8 @@
         \begin{position}
           \vspace{-14pt}
           \begin{itemize}[leftmargin=-0.4cm]
-              % \setlength{\itemindent}{-0.50in}
-              \itemsep0em 
-              \item Led team of 3 to complete Front-End Engineering of customer's requirements on schedule.	
-              \item Represented company at HAZOP/LOPA safety reviews of Raw Water and Steam Generation units.
-              % \item Reviewed design calculations of two peer engineers for accuracy and consistency.
-              \item Leveraged Visual Basic to compute the Heat and Material Balances (HMBs) for equipment design.				
+              \itemsep0em
+              \item Leveraged Visual Basic to assemble and format the largest Heat and Material Balance in the office's history, in order to grant more time for high-value work.
           \end{itemize}
         \end{position}
         \vspace{-12pt}
