@@ -14,9 +14,12 @@
 % \usepackage[left=1.0cm, right=1.0cm, top=1.0cm, bottom=1.0cm]{geometry}
 \usepackage{geometry}
 \geometry{headheight=1cm}
-\geometry{margin=1cm,bottom=1cm}
+\geometry{margin=1.4cm, bottom=0cm}
 \usepackage{enumitem} 
 \setlength{\leftskip}{-0.30in}
+
+\def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
+\let\endchangemargin=\endlist 
 
 % IMAGES
 \usepackage{graphbox} %loads graphicx package
@@ -26,7 +29,7 @@
 \usepackage{multicol}
 
 % SECTION INDENTATION
-\newsectionwidth{2.0cm}
+\newsectionwidth{1.8cm}
 
 \begin{document}
 
@@ -72,76 +75,171 @@
     \begin{resume}
  
       \section{Summary}
-      Software Engineering master's student seeking Summer 2019 internship.
-      Coursework and personal projects involving full-stack web applications and analytics.
-      Passionate about software-driven problem solving.
-      % Prioritizes communciation with supervisors and coworkers.
-      \vspace{-12pt}
+      \begin{itemize}[leftmargin=-0.4cm, rightmargin=0.8cm]
+        % \setlength{\itemindent}{-0.50in}
+        \itemsep0em
+        \item Software Engineering master's student seeking summer 2019 internship.
+        \item Coursework and personal projects involving full-stack web applications and analytics.
+        \end{itemize}
+        \vspace{-10pt}
+      
+        \section{Academic Projects}
+          \vspace{2pt}
 
-      \section{Education}
-
-          \employer{Carnegie Mellon University, Silicon Valley}
-          \title{\textbf{MS, Software Engineering, 3.45 GPA}}
-          \dates{Aug 2018 - Dec 2019}
-          \location{Mountain View, CA}
-          \begin{position}
-              \vspace{-14pt}
-              % Relevant Courses:
-              \begin{itemize}[leftmargin=-0.4cm]
-              \itemsep0em
-              \item Foundations of Software Engineering: Object-oriented (OO) analysis and design; design patterns.
-              \item Foundations of Computer Systems: Low-level software; optimizing for specific architectures.
-              \end{itemize}
-          \end{position}
-          \vspace{-12pt}
-
-          \employer{Stanford University}
-          \title{\textbf{Algorithms and Data Structures}}
-          \dates{Jan 2018 - Mar 2018}
-          \location{Coursera}
-          \begin{position}
-              \vspace{-14pt}
-              % Relevant Courses:
-              \begin{itemize}[leftmargin=-0.4cm]
-              \itemsep0em
-              \item Divide and Conquer, Sorting and Searching, and Randomized Algorithms.
-              \item Graph Search, Shortest Paths, and Data Structures.
-              \end{itemize}
-          \end{position}
-          \vspace{-12pt}
-
-          \employer{Johns Hopkins University}
-          \title{\textbf{BS, Chemical \& Biomolecular Engineering, 3.39 GPA}}
-          \dates{Sep 2008 - May 2012}
-          \location{Baltimore, MD}
+          \employer{Fundamentals of Software Engineering}
+          \title{\textbf{Emergency Social Network}}
+          \dates{Sep 2018 - Dec 2018}
+          \location{Carnegie Mellon University}
           \begin{position}
             \vspace{-14pt}
-            % Relevant Courses:
-            \begin{itemize}[leftmargin=-0.4cm]
+            \begin{itemize}[leftmargin=-0.4cm, rightmargin=0.8cm]
+            % \setlength{\itemindent}{-0.50in}
             \itemsep0em
-            \item Linear Algebra: Matrix algebra. Linear regression, eigenvectors and eigenvalues, orthogonality.
-            \item Differential Equations: Laplace transforms, exact solutions to first- and second-order equations.
-            \item Calculus 3: Multivariate calculus. Gradients, integrals, optimization subject to constraints.
+            \item Addressed antiquated disaster response by producing mobile web app with MongoDB and Angular\nobreakspace7.
+            \item Enabled fulfillment of basic needs by building Craigslist-style listing system for shelter, water, food, etc.
+            \item Employed object-oriented design patterns and test-driven development to achieve high code quality.
             \end{itemize}
           \end{position}
-          \vspace{-12pt}
+          \vspace{-10pt}
 
-        \section{Academic Projects}
-          \begin{itemize}[leftmargin=-0.4cm]
-          \itemsep0em
-          \item Emergency Social Network: Collaborated on mobile-friendly web app for use during disasters. Full MEAN stack (MongoDB, ExpressJS, Angular 7, NodeJS). RESTful HTTP API. WebSockets for realtime updates. JSON Web Tokens for authentication. Mocha for test-driven development (TDD).
-          \item Architecture Lab: Optimized C programs by identifying cycles wasted with Gem5 simulator. Interpreted the offending assembly code and refactored the original C code for efficiency.
-          \item Malloc Lab: Developed C package for memory allocation similar to malloc in utilization and speed.
-          \end{itemize}
-          \vspace{-12pt}
+          \employer{Fundamentals of Computer Systems}
+          \title{\textbf{Architecture Lab}}
+          \dates{Oct 2018}
+          \location{Carnegie Mellon University}
+          \begin{position}
+            \vspace{-14pt}
+            \begin{itemize}[leftmargin=-0.4cm, rightmargin=0.8cm]            % \setlength{\itemindent}{-0.50in}
+            \itemsep0em
+            \item Gained understanding of hardware-software interaction and implications for efficient code design.
+            \item Optimized C programs with Gem5 by identifying slow assembly code and refactoring for efficiency.
+            \end{itemize}
+          \end{position}
+          \vspace{-10pt}
+
+          % \employer{Fundamentals of Computer Systems}
+          % \title{\textbf{Malloc Lab}}
+          % \dates{Nov 2018}
+          % \location{Carnegie Mellon University}
+          % \begin{position}
+          %   \vspace{-14pt}
+          %   \begin{itemize}[leftmargin=-0.4cm, rightmargin=0.8cm]            % \setlength{\itemindent}{-0.50in}
+          %   \itemsep0em
+          %   \item Developed C package for memory allocation similar to malloc in utilization and speed.
+          %   \end{itemize}
+          % \end{position}
+          % \vspace{-10pt}
           
         \section{Personal Projects}
-        \begin{itemize}[leftmargin=-0.4cm]
-        \itemsep0em
-        \item Day Trading Web App for Eve Online: Identifies top  day trading commodities. Angular\nobreakspace4 front end,  Laravel back end, MySQL Database. Authenticates by OAuth.  Performs asynchronous HTTP requests and calculations.
-        \item Bayesian Trading Add-On for Elder Scrolls Online: Determines optimal market sell prices of items. Utilizes incomplete market data  to compute the maximum a posteriori (MAP) estimate of profit. Written in Lua.
-        \end{itemize}
-        \vspace{-12pt}
+
+        \vspace{2pt}
+
+        \employer{Stanford University}
+        \title{\textbf{Algorithms and Data Structures}}
+        \dates{Feb 2018 - Apr 2018}
+        \location{Coursera}
+        \begin{position}
+            \vspace{-14pt}
+            \begin{itemize}[leftmargin=-0.4cm, rightmargin=0.8cm]
+            \itemsep0em
+            \item Implemented classic divide-and-conquer, sorting, searching, and randomization algorithms in Java.
+            \item Cultivated knowledge of data structures while expressing BFS, DFS, and shortest path algorithms.
+            \end{itemize}
+        \end{position}
+        \vspace{-10pt}
+
+        \employer{}
+        \title{\textbf{Day Trading Web App for Eve Online}}
+        \dates{}
+        \location{Jan 2018 - Mar 2018}
+        \begin{position}
+          \vspace{-28pt}
+          \begin{itemize}[leftmargin=-0.4cm, rightmargin=0.8cm]
+          % \setlength{\itemindent}{-0.50in}
+          \itemsep0em
+          \item Constructed web app from Laravel and MySQL to  identify lucrative commodity trade opportunities.
+          \item Authenticated with game API, processed market data, and multiplied wealth by 7x over 3 months.
+          \end{itemize}
+        \end{position}
+        \vspace{-10pt}
+
+        % \employer{}
+        % \title{\textbf{Bayesian Trading Add-On for Elder Scrolls Online}}
+        % \dates{}
+        % \location{Feb 2018 - Mar 2018}
+        % \begin{position}
+        %   \vspace{-28pt}
+        %   \begin{itemize}[leftmargin=-0.4cm, rightmargin=0.8cm]
+        %   % \setlength{\itemindent}{-0.50in}
+        %   \itemsep0em
+        %   \item Developed Lua add-on to eliminate inventory management tedium by automating loot liquidation.
+        %   \item Made \$64 worth of game currency, maximized free inventory space, increased time for gameplay with wife.
+        %   \end{itemize}
+        % \end{position}
+        % \vspace{-10pt}
+
+      \section{Professional Experience}
+      \vspace{2pt}
+
+        \employer{Axens (Petroleum Desulfurization)}
+        \title{\textbf{Engineer 2}}
+        \dates{Jul 2016 - May 2017}
+        \location{Princeton, NJ}
+        \begin{position}
+          \vspace{-14pt}
+          \begin{itemize}[leftmargin=-0.4cm, rightmargin=0.8cm]
+          % \setlength{\itemindent}{-0.50in}
+          \itemsep0em
+          \item Automated pressure containment calculations with Visual Basic, improving safety and saving manhours.
+          \end{itemize}
+        \end{position}
+        \vspace{-10pt}
+
+        \employer{Amec Foster Wheeler (Engineering Contractor)}
+        \title{\textbf{Engineer 2}}
+        \dates{Jan 2013 - Mar 2016}
+        \location{Hampton Township, NJ}
+        \begin{position}
+          \vspace{-14pt}
+          \begin{itemize}[leftmargin=-0.4cm, rightmargin=0.8cm]
+          \itemsep0em
+              \item Leveraged Visual Basic to assemble and format 120-sheet Excel file, permitting on-time delivery to client.
+          \end{itemize}
+        \end{position}
+        \vspace{-10pt}
+
+        \section{Education}
+        \vspace{2pt}
+
+        \employer{Carnegie Mellon University, Silicon Valley}
+        \title{\textbf{MS, Software Engineering, 3.45 GPA}}
+        \dates{Aug 2018 - Dec 2019}
+        \location{Mountain View, CA}
+        \begin{position}
+            \vspace{-14pt}
+            % % Relevant Courses:
+            % \begin{itemize}[leftmargin=-0.4cm, rightmargin=0.8cm]
+            % \itemsep0em
+            % \item Foundations of Software Engineering: Object-oriented (OO) analysis and design; design patterns.
+            % \item Foundations of Computer Systems: Low-level software; optimizing for specific architectures.
+            % \end{itemize}
+        \end{position}
+        \vspace{-10pt}
+
+        \employer{Johns Hopkins University}
+        \title{\textbf{BS, Chemical \& Biomolecular Engineering, 3.39 GPA}}
+        \dates{Sep 2008 - May 2012}
+        \location{Baltimore, MD}
+        \begin{position}
+          \vspace{-14pt}
+          % Relevant Courses:
+          % \begin{itemize}[leftmargin=-0.4cm, rightmargin=0.8cm]
+          % \itemsep0em
+          % \item Linear Algebra: Matrix algebra. Linear regression, eigenvectors and eigenvalues, orthogonality.
+          % \item Differential Equations: Laplace transforms, exact solutions to first- and second-order equations.
+          % \item Calculus 3: Multivariate calculus. Gradients, integrals, optimization subject to constraints.
+          % \end{itemize}
+        \end{position}
+        \vspace{-10pt}
 
         \section{Skills and Interests}
           \vspace{3pt}
@@ -165,53 +263,55 @@
 
             \subsubsection{Other Interests}
             \vspace{-22pt}
-            SciFi, Hiking, Board Games
+            Hiking, Board Games
             % \vspace{-28pt}
 
             % \end{itemize}
-            \vspace{-12pt}
+            \vspace{-10pt}
 
           \end{multicols}
         \vspace{-24pt}
 
-      \section{Professional Experience}
-        \employer{Axens (Petroleum Desulfurization)}
-        \title{\textbf{Process Engineer 2}}
-        \dates{Jul 2016 - May 2017}
-        \location{Princeton, NJ}
-        \begin{position}
-          \vspace{-14pt}
-          \begin{itemize}[leftmargin=-0.4cm]
-          % \setlength{\itemindent}{-0.50in}
-          \itemsep0em
-          \item Automated calculations critical to the design using Visual Basic, thereby increasing safety, reducing error potential, and decreasing man-hour costs for all future projects.
-          \end{itemize}
-        \end{position}
-        \vspace{-10pt}
-
-        \employer{Amec Foster Wheeler (Engineering Contractor)}
-        \title{\textbf{Process Engineer 2}}
-        \dates{Jan 2013 - Mar 2016}
-        \location{Hampton Township, NJ}
-        \begin{position}
-          \vspace{-14pt}
-          \begin{itemize}[leftmargin=-0.4cm]
-              \itemsep0em
-              \item Leveraged Visual Basic to assemble and format the largest Heat and Material Balance in the office's history.
-          \end{itemize}
-        \end{position}
-        \vspace{-12pt}
-
       \section{Certifications} 
-        \begin{itemize}[leftmargin=-0.4cm]
-        \itemsep0em
-        \item Nov 2017: National Council of Examiners for Engineering and Surveying, Engineer-In-Training
-        \item Oct 2017: American Society for Quality, Six Sigma Green Belt
-        \end{itemize}
-        \vspace{-12pt}
+
+      \vspace{0pt}
+
+      % \begin{itemize}[leftmargin=-0.4cm]
+      % \itemsep0em
+            
+      % \item
+      \employer{}
+      \title{NCEES Engineer-In-Training}
+      \dates{}
+      \location{Nov 2017 - present}
+      \begin{position}
+          \vspace{-42pt}
+          % % Relevant Courses:
+          % \begin{itemize}[leftmargin=-0.4cm, rightmargin=0.8cm]
+          % \itemsep0em
+          % \item Foundations of Software Engineering: Object-oriented (OO) analysis and design; design patterns.
+          % \item Foundations of Computer Systems: Low-level software; optimizing for specific architectures.
+          % \end{itemize}
+      \end{position}
+
+      % \item
+      \employer{}
+      \title{ASQ Six Sigma Green Belt}
+      \dates{}
+      \location{Oct 2017 - present}
+      \begin{position}
+          \vspace{-28pt}
+          % % Relevant Courses:
+          % \begin{itemize}[leftmargin=-0.4cm, rightmargin=0.8cm]
+          % \itemsep0em
+          % \item Foundations of Software Engineering: Object-oriented (OO) analysis and design; design patterns.
+          % \item Foundations of Computer Systems: Low-level software; optimizing for specific architectures.
+          % \end{itemize}
+      \end{position}
+    % \end{itemize}
 
     \end{resume}
 
-\vspace*{\fill}
+% \vspace*{\fill}
 
 \end{document}
