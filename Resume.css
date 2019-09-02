@@ -158,8 +158,25 @@ ul {
 }
 
 .card {
+
+  /* Bootstrap defaults */
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  /* border: 1px solid rgba(0, 0, 0, 0.125); */
+  /* border-radius: 0.25rem; */
+  
+  /* Custom */
   margin-bottom: 10pt;
   padding: 10pt;
+  border: 0.75pt solid rgba(0, 0, 0, 0.125);
+  border-radius: 3pt;
 }
 
 .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col,
@@ -193,6 +210,12 @@ ul {
   max-width: 8.333333%;
 }
 
+.col-4 {
+  -ms-flex: 0 0 33.333333%;
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+}
+
 .col-5 {
   -ms-flex: 0 0 41.666667%;
   flex: 0 0 41.666667%;
@@ -203,6 +226,13 @@ ul {
   -ms-flex: 0 0 58.333333%;
   flex: 0 0 58.333333%;
   max-width: 58.333333%;
+}
+
+.col-auto {
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  width: auto;
+  max-width: 100%;
 }
 
 .contact-info {
@@ -225,6 +255,11 @@ ul {
 .ml-auto,
 .mx-auto {
   margin-left: auto !important;
+}
+
+.mr-auto,
+.mx-auto {
+  margin-right: auto !important;
 }
 
 .no-gutters {
