@@ -6,7 +6,35 @@
  */
 
 /* @import url("https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"); */
-@import url("https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap");
+/* @import url("https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap"); */
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400,400i,700&display=swap");
+
+@media screen {
+  body {
+    margin: 0.5in;
+  }
+}
+
+@media print {
+
+  p,
+  h2,
+  h3 {
+    /* Bootstrap defaults */
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+
+  @page {
+    margin: 0.5in;
+    size: letter;
+  }
+}
 
 :root {
   /* Bootstrap defaults */
@@ -53,6 +81,7 @@ html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-print-color-adjust: exact;
 }
 
 body {
@@ -110,51 +139,38 @@ h2, .h2 {
   /* Custom */
   font-size: 16pt;
   color: dodgerblue;
-  margin-top: -3pt;
-  margin-bottom: 8pt;
+  margin-top: 0pt;
+  margin-bottom: 4pt;
+}
+
+h3, h4 {
+  font-size: 10.5pt;
 }
 
 h3 {
-  font-size: 10pt;
-  margin-top: -4pt;
+  margin-top: 4tpt;
 }
 
 h4 {
-  font-size: 10pt;
-  color: gray;
-}
-
-@media print {
-
-  p,
-  h2,
-  h3 {
-    /* Bootstrap defaults */
-    orphans: 3;
-    widows: 3;
-  }
-
-  h2,
-  h3 {
-    page-break-after: avoid;
-  }
-
-  @page {
-    size: letter;
-  }
+  margin-top: -4pt;
 }
 
 ul {
-  font-size: 10pt;
+  font-size: 10.5pt;
   margin-top: -4pt;
-  margin-bottom: 6pt;
-  margin-left: -10pt;
+  margin-bottom: 0pt;
+  margin-left: -18pt;
   list-style-type: none;
 }
 
 .align-items-center {
   -ms-flex-align: center !important;
   align-items: center !important;
+}
+
+.align-items-end {
+  -ms-flex-align: end !important;
+  align-items: flex-end !important;
 }
 
 .card {
@@ -176,7 +192,8 @@ ul {
   margin-bottom: 10pt;
   padding: 10pt;
   border: 0.75pt solid rgba(0, 0, 0, 0.125);
-  border-radius: 3pt;
+  /* border-radius: 3pt; */
+  box-shadow: 2pt 2pt 2pt gray;
 }
 
 .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col,
@@ -236,11 +253,11 @@ ul {
 }
 
 .contact-info {
-  font-size: 10pt;
+  font-size: 10.5pt;
 }
 
-.indented-rows .row {
-  margin-left: 10pt;
+.indent-1 {
+  padding-left: 12pt;
 }
 
 .mb-2,
@@ -287,4 +304,8 @@ ul {
 
 .text-muted {
   color: #6c757d !important;
+}
+
+.text-right {
+  text-align: right !important;
 }
