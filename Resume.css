@@ -73,6 +73,11 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 html {
   /* Bootstrap defaults */
   font-family: sans-serif;
@@ -204,8 +209,8 @@ ul {
   /* border-radius: 0.25rem; */
   
   /* Custom */
-  margin-bottom: 10pt;
-  padding: 10pt;
+  margin-bottom: 12pt;
+  padding: 12pt;
   border: 0.75pt solid rgba(0, 0, 0, 0.125);
   /* border-radius: 3pt; */
   box-shadow: 2pt 2pt 2pt gray;
@@ -259,6 +264,12 @@ ul {
   max-width: 41.666667%;
 }
 
+.col-6 {
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
 .col-7 {
   -ms-flex: 0 0 58.333333%;
   flex: 0 0 58.333333%;
@@ -276,8 +287,21 @@ ul {
   font-size: 10.5pt;
 }
 
+.d-block {
+  display: block !important;
+}
+
 .indent-1 {
   padding-left: 8pt;
+}
+
+.justify-content-center {
+  -ms-flex-pack: center !important;
+  justify-content: center !important;
+}
+
+.m-auto {
+  margin: auto !important;
 }
 
 .mb-2,
@@ -304,6 +328,20 @@ ul {
   margin-left: 0;
 }
 
+.no-gutters > .col,
+.no-gutters > [class*="col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.offset-1 {
+  margin-left: 8.333333%;
+}
+
+.p-0 {
+  padding: 0 !important;
+}
+
 .row {
   /* Bootstrap defaults */
   display: -ms-flexbox;
@@ -326,6 +364,10 @@ small,
 .small {
   font-size: 80%;
   font-weight: 400;
+}
+
+.text-center {
+  text-align: center !important;
 }
 
 .text-muted {
