@@ -1,334 +1,385 @@
 <html>
 <head>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
-  <style>
-
-    body {
-      width: 8.5in;
-       height: 11.0in;
-       padding: 0.5in;
-       font-family: 'Roboto Slab', serif;
-    }
-
-    h1 {
-      font-size: 2.40em;
-    }
-
-    h2 {
-      font-size: 1.20em;
-      margin-top: -4px;
-      margin-bottom: 10px;
-    }
-
-    h3 {
-      font-size: 0.9em;
-      margin-top: -6px;
-    }
-
-    ul {
-      font-size: 0.84em;
-      margin-top: -6px;
-      margin-bottom: 8px;
-    }
-
-    .contact-info {
-      font-size: 0.84em;
-    }
-
-    .indented-rows .row {
-      margin-left: 12px;
-    }
-
-    .skills-and-interests {
-      padding-left: 16px;
-    }
-    
-
-  </style>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="Resume.css">
 </head>
 <body>
    
-  <div class="row align-items-center no-gutters mb-2">
+  <div class="row align-items-center  mb-2">
 
     <!-- NAME -->
-    <div class="col-7">
-        <h1>Cameron Hudson</h1>
-        <h2 class="text-muted">MS Software Engineering, Carnegie Mellon</h2>
-
+    <div class="col-6">
+      <h1>Cameron Hudson</h1>
+      <h2 class="text-muted">MS Software Engineering, Carnegie&nbspMellon&nbspUniversity</h2>
     </div>
 
     <!-- CONTACT INFO -->
-    <div class="col-5 contact-info ml-auto">
+    <div class="col contact-info ml-auto">
 
-      <div class="row align-items-center no-gutters">
-        <div class="col-1">
-          <img src="images/gmail-logo.png" height="10em"/>
-        </div>
-        <div class="col">
+      <a href="mailto:CameronHudson8@gmail.com">
+        <div class="row align-items-center no-gutters">
+          <div class="col-1 text-center">
+            <img src="images/gmail-logo.png"  height="10pt"/>
+          </div>
+          <div class="col">
             CameronHudson8@gmail.com
+          </div>
         </div>
-      </div>
+      </a>
 
       <div class="row align-items-center no-gutters">
-        <div class="col-1">
-          <img src="images/phone-icon.png" height="10em"/>
+        <div class="col-1 text-center">
+          <img class="ml-auto" src="images/phone-icon.png" height="10pt" />
         </div>
         <div class="col" >
-            484-888-0588
+          484-888-0588
         </div>
       </div>
 
       <div class="row align-items-center no-gutters">
-          <div class="col-1">
-            <img src="images/location-icon.png" height="10em"/>
+        <div class="col-1 text-center">
+          <img src="images/location-icon.png" height="10pt"/>
+        </div>
+        <div class="col" >
+          Mountain View, CA
+        </div>
+      </div>
+
+      <a href="https://www.cameronhudson8.com">
+        <div class="row align-items-center no-gutters">
+          <div class="col-1 text-center">
+            <img src="images/personal-site-favicon.png" height="10pt"/>
           </div>
           <div class="col" >
-              Mountain View, CA
+            CameronHudson8.com
           </div>
         </div>
+      </a>
 
+      <a href="https://www.linkedin.com/in/CameronHudson8">
         <div class="row align-items-center no-gutters">
-            <div class="col-1">
-              <img src="images/personal-site-favicon.png" height="10em"/>
-            </div>
-            <div class="col" >
-                CameronHudson8.com
-            </div>
+          <div class="col-1 text-center">
+            <img src="images/linkedin-logo.png" height="10pt"/>
           </div>
+          <div class="col" >
+            linkedin.com/in/CameronHudson8
+          </div>
+        </div>
+      </a>
 
-          <div class="row align-items-center no-gutters">
-              <div class="col-1">
-                <img src="images/linkedin-logo.png" height="10em"/>
-              </div>
-              <div class="col" >
-                  linkedin.com/in/CameronHudson8
-              </div>
-            </div>
+      <a href="https://www.github.com/CameronHudson8">
+        <div class="row align-items-center no-gutters">
+          <div class="col-1 text-center">
+            <img src="images/github-logo.png" height="10pt"/>
+          </div>
+          <div class="col" >
+            github.com/CameronHudson8
+          </div>
+        </div>
+      </a>
 
-            <div class="row align-items-center no-gutters">
-                <div class="col-1">
-                  <img src="images/github-logo.png" height="10em"/>
-                </div>
-                <div class="col" >
-                    github.com/CameronHudson8
-                </div>
-              </div>
     </div>
-
-
-
   </div>
 
   <!-- SUMMARY -->
-  <div class="row">
-    <div class="col">
-      <h2>Summary</h2>
-      <ul>
-        <li>Employs best practices of object-oriented design, including design patterns and SOLID principles.</li>
-        <li>Exercises agile software development practices and test-driven development.</li>
-        <li>Experience with full-stack web development, Docker containers, and cloud deployment on Kubernetes.</li>
-      </ul>
-    </div>
+  <div class="card">
+    <h2>Summary</h2>
+    <ul>
+      <li>├ Seeking full-time position in DevOps or back-end development. Available January 2020.</li>
+      <li>├ Employs best practices of object-oriented design, including design patterns and SOLID principles.</li>
+      <li>├ Exercises agile software development practices and test-driven development.</li>
+      <li>└ Experience with full-stack web development, Docker containers, and cloud deployment on Kubernetes.</li>
+    </ul>
   </div>
 
-  <!-- ACADEMIC PROJECTS -->
-  <div class="row">
-    <div class="col">
-      <h2>Academic Projects</h2>
+  <!-- PROFESSIONAL EXPERIENCE -->
+  <div class="card">
+      <h2>Professional Experience</h2>
 
-      <div class="indented-rows">
-        <div class="row">
-          <h3 class="col"><b>Design Patterns Web Applications</b></h3>
-          <h3 class="col-4  text-muteddsfs" style="text-align: right">Carnegie Mellon University</h3>
+      <div class="indent-1">
+        <div class="row align-items-end">
+          <div class="col-auto">
+            <h3><b>Software Engineering Intern</b></h3>
+            <h4 class="text-muted">SFO Airport, Information Technology and Telecommunications</h3>
+          </div>
+          <div class="col ml-auto text-right">
+            <h4 class="text-muted">San Francisco, CA</h3>
+            <h4 class="text-muted">Jun 2019 - Aug 2019</h3>
+          </div>
         </div>
         <div class="row">
-          <h3 class="col text-muted">Software Architecture and Design</h3>
-          <h3 class="col-4" style="text-align: right">Jan 2019 - May 2019</h3>
-        </div>
-        <div class="row">
+          <div class="col-auto">
             <ul>
-              <li>Applied the 23 canonical design patterns by drawing class diagrams and implementing them in Java.</li>
-              <li>Presented class diagrams and code output in user-friendly Java Spring MVC web application.</li>
+              <li>├ Supported initial rollout of mobile app backend on AWS Elastic Kubernetes Service.</li>
+              <li>├ Developed on Kubernetes in DevOps style, creating Docker images and Kubernetes resources as necessary.</li>
+              <li>├ Wrote multithreaded regressions tests in Python for invokation during continuous integration and deployment.</li>
+              <li>└ Configured Docker images for Kafka Connect, Schema Registry, Postgres to persist Kafka streams to storage. </li>
             </ul>
+          </div>
         </div>
       </div>
 
-      <div class="indented-rows">
-        <div class="row">
-          <h3 class="col"><b>Emergency Social Network</b></h3>
-          <h3 class="col-4" style="text-align: right">Carnegie Mellon University</h3>
+      <div class="row align-items-center">
+        <div class="col">
+          <hr>
+        </div>
+        <div class="col">
+          <i class="text-muted small">MS in Software Engineering begins</i>
+        </div>
+        <div class="col">
+          <hr>
+        </div>
+      </div>
+  
+      <div class="indent-1">
+        <div class="row align-items-end">
+          <div class="col-auto">
+            <h3><b>Chemical Process Engineer 2</b></h3>
+            <h4 class="text-muted">Axens North America</h3>
+          </div>
+          <div class="col ml-auto text-right">
+            <h4 class="text-muted">Princeton, NJ</h3>
+            <h4 class="text-muted">Jul 2016 - May 2017</h3>
+          </div>
         </div>
         <div class="row">
-          <h3 class="col text-muted">Fundamentals of Software Engineering</h3>
-          <h3 class="col-4" style="text-align: right">Sep 2018 - Dec 2018</h3>
+          <div class="col-auto">
+            <ul>
+              <li>└ Automated pressure containment calculations with Visual Basic, improving safety and saving manhours.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  
+      <div class="indent-1">
+        <div class="row align-items-end">
+          <div class="col-auto">
+            <h3><b>Chemical Process Engineer 1</b></h3>
+            <h4 class="text-muted">Amec Foster Wheeler</h3>
+          </div>
+          <div class="col ml-auto text-right">
+            <h4 class="text-muted">Hampton Township, NJ</h3>
+            <h4 class="text-muted">Jan 2013 - Mar 2016</h3>
+          </div>
         </div>
         <div class="row">
+          <div class="col-auto">
+            <ul>
+              <li>└ Leveraged Visual Basic to assemble and format 120-sheet Excel file, permitting on-time delivery to client.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  
+  <!-- ACADEMIC PROJECTS -->
+  <div class="card">
+    <h2>Academic Projects</h2>
+
+    <div class="indent-1">
+      <div class="row align-items-end">
+        <div class="col-auto">
+          <h3><b>Design Patterns Web Applications</b></h3>
+          <h4 class="text-muted">Software Architecture and Design, Carnegie Mellon University</h3>
+        </div>
+        <div class="col ml-auto text-right">
+          <h4 class="text-muted">Mountain View, CA</h3>
+          <h4 class="text-muted">Jan 2019 - May 2019</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-auto">
           <ul>
-            <li>Addressed antiquated disaster response by producing Angular 7 mobile web app for citizens in distress.</li>
-            <li>Enabled fulfillment of basic needs by building Craigslist-style listing system for shelter, water, food, etc.</li>
-            <li>Employed object-oriented design principles and test-driven development to achieve high code quality.</li>
+            <li>├ Studied the 23 canonical design patterns by drawing class diagrams and implementing them in Java.</li>
+            <li>├ Presented resulting diagrams and code output in user-friendly Spring web application.</li>
+            <li>└ Applied design patterns during team project to create an online store from React and Java Play Framework.</li>
           </ul>
         </div>
       </div>
 
     </div>
 
-  </div>
-
-  <!-- PERSONAL PROJECTS -->
-  <div class="row">
-      <div class="col">
-        <h2>Personal Projects</h2>
-  
-        <div class="indented-rows">
-          <div class="row">
-            <h3 class="col"><b>Bayesian Trading Add-On for Elder Scrolls Online</b></h3>
-            <h3 class="col-4" style="text-align: right">Feb 2018 - Mar 2018</h3>
-          </div>
-          <div class="row">
-            <ul>
-              <li>Developed add-on in Lua to eliminate inventory management tedium by automating loot liquidation.</li>
-              <li>Using game data for Bayesian prior, computed the maximum <i>a posteriori</i> value of each item.</li>
-              <li>Rocketed to #3 in terms of trade revenue within guild, increased time for gameplay with wife.</li>
-            </ul>
-          </div>
+    <div class="indent-1">
+      <div class="row align-items-end">
+        <div class="col-auto">
+          <h3><b>Emergency Social Network</b></h3>
+          <h4 class="text-muted">Fundamentals of Software Engineering, Carnegie Mellon University</h3>
         </div>
-  
-        <div class="indented-rows">
-          <div class="row">
-            <h3 class="col"><b>Day Trading Web App for Eve Online</b></h3>
-            <h3 class="col-4" style="text-align: right">Jan 2018 - Mar 2018</h3>
-          </div>
-          <div class="row">
-            <ul>
-              <li>Constructed web app from Laravel and MySQL to identify lucrative commodity trade opportunities.</li>
-              <li>Authenticated with game API, processed market data, and multiplied wealth by 7x over 3 months.</li>
-            </ul>
-          </div>
+        <div class="col ml-auto text-right justify-content-end">
+          <h4 class="text-muted">Mountain View, CA</h3>
+          <h4 class="text-muted">Sep 2018 - Dec 2018</h3>
         </div>
-  
+      </div>
+      <div class="row">
+        <div class="col-auto">
+          <ul>
+            <li>├ Addressed antiquated disaster response by producing Angular 7 web app for citizens in distress.</li>
+            <!-- <li>├ Personal feature: Craigslist-style listing system to share basic needs such as shelter, water, and food.</li> -->
+            <li>├ Employed object-oriented design principles and test-driven development to achieve high code quality.</li>
+            <li>└ Designed and implemented RESTful APIs connected to MongoDB through a NodeJS backend.</li>
+          </ul>
+        </div>
       </div>
     </div>
 
-  <!-- PROFESSIONAL EXPERIENCE -->
-  <div class="row">
+  </div>
+
+
+  <!-- PERSONAL PROJECTS -->
+  <!-- <div class="card">
+    <div class="row">
       <div class="col">
-        <h2>Professional Experience</h2>
-  
-        <div class="indented-rows">
-          <div class="row">
-            <h3 class="col"><b>Engineer 2</b></h3>
-            <h3 class="col-4" style="text-align: right">Princeton, NJ</h3>
-          </div>
-          <div class="row">
-            <h3 class="col text-muted">Axens North America</h3>
-            <h3 class="col-4" style="text-align: right">Jul 2016 - May 2017</h3>
-          </div>
-          <div class="row">
-            <ul>
-              <li>Automated pressure containment calculations with Visual Basic, improving safety and saving manhours.</li>
-            </ul>
-          </div>
-        </div>
-  
-        <div class="indented-rows">
-            <div class="row">
-              <h3 class="col"><b>Engineer 1</b></h3>
-              <h3 class="col-4" style="text-align: right">Hampton Township, NJ</h3>
+        <h2>Personal Projects</h2>
+
+        <div class="indent-1">
+          <div class="row align-items-end">
+            <div class="col-auto">
+              <h3><b>Bayesian Trading Add-On</b></h3>
+              <h4 class="text-muted">The Elder Scrolls Online</h3>
             </div>
-            <div class="row">
-              <h3 class="col text-muted">Amec Foster Wheeler</h3>
-              <h3 class="col-4" style="text-align: right">Jan 2013 - Mar 2016</h3>
+            <div class="col ml-auto text-right">
+              <h4 class="text-muted">Mountain View, CA</h3>
+              <h4 class="text-muted">Feb 2018 - Mar 2018</h3>
             </div>
-            <div class="row">
+          </div>
+          <div class="row">
+            <div class="col-auto">
               <ul>
-                <li>Leveraged Visual Basic to assemble and format 120-sheet Excel file, permitting on-time delivery to client.</li>
+                <li>├ Developed add-on in Lua to eliminate inventory management tedium by automating loot liquidation.</li>
+                <li>├ Using game data for Bayesian prior, computed the maximum <i>a posteriori</i> value of each item.</li>
+                <li>└ Rocketed to #3 in terms of trade revenue within guild, increased time for gameplay with wife.</li>
               </ul>
             </div>
           </div>
-  
+        </div>
+
+        <div class="indent-1">
+          <div class="row align-items-end">
+            <div class="col-auto">
+              <h3><b>Day Trading Web App</b></h3>
+              <h4 class="text-muted">Eve Online</h3>
+            </div>
+            <div class="col ml-auto text-right">
+              <h4 class="text-muted">Mountain View, CA</h3>
+              <h4 class="text-muted">Jan 2018 - Mar 2018</h3>
+            </div>
+
+          </div>
+          <div class="row">
+            <div class="col-auto">
+              <ul>
+                <li>├ Constructed web app from Laravel and MySQL to identify lucrative commodity trade opportunities.</li>
+                <li>└ Authenticated with game API, processed market data, and multiplied wealth by 7x over 3 months.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    
+      </div>
+    </div>
+  </div> -->
+
+  <!-- EDUCATION -->
+  <div class="card">
+    <h2>Education</h2>
+
+    <div class="indent-1">
+      <div class="row align-items-end">
+        <div class="col-auto">
+          <h3><b>MS, Software Engineering, 3.45 GPA</b></h3>
+          <h4 class="text-muted">Carnegie Mellon University, Silicon Valley</h3>
+        </div>
+        <div class="col ml-auto text-right">
+          <h4 class="text-muted">Mountain View, CA</h3>
+          <h4 class="text-muted">Aug 2018 - Dec 2019</h3>
+        </div>
       </div>
     </div>
 
-      <!-- EDUCATION -->
+    <div class="indent-1">
+      <div class="row align-items-end">
+        <div class="col-auto">
+          <h3><b>BS, Chemical & Biomolecular Engineering, 3.39 GPA</b></h3>
+          <h4 class="text-muted">Johns Hopkins University</h3>
+        </div>
+        <div class="col ml-auto text-right">
+          <h4 class="text-muted">Baltimore, MD</h3>
+          <h4 class="text-muted">Sep 2008 - May 2012</h3>
+        </div>
+      </div>
+    </div>
+  
+  </div>
+
+  <!-- Skills and Interests -->
+  <!-- <div class="card">
+  <h2>Skills and Interests</h2>
+    <div class="indent-1">
+      <div class="row">
+
+        <div class="col-auto mr-auto">
+          <h3><b>Languages</b></h3>
+          <ul>
+            <li>├ C</li>
+            <li>├ Java</li>
+            <li>└ JavaScript</li>
+          </ul>
+        </div>
+
+        <div class="col-auto mr-auto">
+          <h3><b>Frameworks</b></h3>
+          <ul>
+              <li>├ Angular 2+</li>
+              <li>├ Spring</li>
+              <li>└ Laravel<li>
+            </ul>
+        </div>
+
+        <div class="col-auto mr-auto">
+          <h3><b>Databases</b></h3>
+          <ul>
+            <li>├ MySQL</li>
+            <li>├ MongoDB</li>
+            <li>└ Postgres</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div> -->
+
+  <!-- Certifications -->
+  <!-- <div class="card">
+    <h2>Certifications</h2>
     <div class="row">
       <div class="col">
-        <h2>Education</h2>
   
-        <div class="education indented-rows">
+        <div class="education indent-1">
           <div class="row">
-            <h3 class="col"><b>MS, Software Engineering, 3.45 GPA</b></h3>
-            <h3 class="col-4" style="text-align: right">Mountain View, CA</h3>
-          </div>
-          <div class="row">
-            <h3 class="col text-muted">Carnegie Mellon University, Silicon Valley</h3>
-            <h3 class="col-4" style="text-align: right">Aug 2018 - Dec 2019</h3>
+            <div class="col-auto">
+              <h3>├ NCEES Engineer-In-Training</h3>
+            </div>
+            <div class="col ml-auto text-right">
+              <h4 class="text-muted">Nov 2017 - present</h3>
+            </div>
           </div>
         </div>
 
-        <div class="education indented-rows">
+        <div class="education indent-1">
             <div class="row">
-              <h3 class="col"><b>BS, Chemical & Biomolecular Engineering, 3.39 GPA</b></h3>
-              <h3 class="col-4" style="text-align: right">Baltimore, MD</h3>
-            </div>
-            <div class="row">
-              <h3 class="col text-muted">Johns Hopkins University</h3>
-              <h3 class="col-4" style="text-align: right">Sep 2008 - May 2012</h3>
+              <div class="col-auto">
+                <h3>└ ASQ Six Sigma Green Belt</h3>
+              </div>
+              <div class="col ml-auto text-right">
+                <h4 class="text-muted">Oct 2017 - present</h3>
+              </div>
             </div>
           </div>
   
       </div>
     </div>
-
-    <!-- Skills and Interests -->
-    <div class="row">
-        <div class="col">
-          <h2>Skills and Interests</h2>
-          <div class="skills-and-interests indented-rows">
-            <div class="row no-gutters justify">
-
-              <div class="col-auto mr-auto">
-                <h3><b>Languages</b></h3>
-                <h3 class="text-muted">C, Java, JavaScript</h3>
-              </div>
-
-              <div class="col-auto mr-auto">
-                <h3><b>Frameworks</b></h3>
-                <h3 class="text-muted">Angular 7, Spring MVC, Laravel</h3>
-              </div>
-
-              <div class="col-auto mr-auto">
-                <h3><b>Databases</b></h3>
-                <h3 class="text-muted">MySQL, MongoDB</h3>
-              </div>
-      
-            </div>
-          </div>
-        </div>
-      </div>
-
-    <!-- Certifications -->
-    <div class="row">
-        <div class="col">
-          <h2>Certifications</h2>
-    
-          <div class="education indented-rows">
-            <div class="row">
-              <h3 class="col">NCEES Engineer-In-Training</h3>
-              <h3 class="col-4" style="text-align: right">Nov 2017 - present</h3>
-            </div>
-          </div>
-
-          <div class="education indented-rows">
-              <div class="row">
-                <h3 class="col">ASQ Six Sigma Green Belt</h3>
-                <h3 class="col-4" style="text-align: right">Oct 2017 - present</h3>
-              </div>
-            </div>
-    
-        </div>
-      </div>
+  </div> -->
 
 </body>
 </html>

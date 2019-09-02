@@ -1,0 +1,379 @@
+/*!
+ * Bootstrap v4.3.1 (https://getbootstrap.com/)
+ * Copyright 2011-2019 The Bootstrap Authors
+ * Copyright 2011-2019 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400,400i,700&display=swap");
+
+@media screen {
+  body {
+    margin: 0.5in;
+  }
+}
+
+@media print {
+
+  p,
+  h2,
+  h3 {
+    /* Bootstrap defaults */
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+
+  @page {
+    margin: 0.5in;
+    size: letter;
+  }
+}
+
+:root {
+  /* Bootstrap defaults */
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 432pt;
+  --breakpoint-md: 576pt;
+  --breakpoint-lg: 744pt;
+  --breakpoint-xl: 900pt;
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+*,
+*::before,
+*::after {
+  /* Bootstrap defaults */
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+html {
+  /* Bootstrap defaults */
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-print-color-adjust: exact;
+}
+
+body {
+  /* Bootstrap defaults */
+  /* margin: 0.5in; */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  /* font-size: 1rem; */
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+
+  /* Custom */
+  width: 8.5in;
+  height: 11.0in;
+  font-family: 'Roboto Slab', serif;
+  font-size: 12pt;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  /* Bootstrap defaults */
+  margin-top: 0;
+  /* margin-bottom: 0.5rem; */
+
+  /* Custom */
+  margin-bottom: 6pt;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  /* Bootstrap defaults */
+  /* margin-bottom: 0.5rem; */
+  font-weight: 500;
+  line-height: 1.2;
+
+  /* Custom */
+  margin-bottom: 6pt;
+}
+
+h1, .h1 {
+  /* Boostrap defaults */
+  /* font-size: 2.5rem; */
+
+  /* Custom */
+  font-size: 24pt;
+  color: dodgerblue;
+}
+
+h2, .h2 {
+
+  /* Bootstrap defaults */
+  /* font-size: 2rem; */
+
+  /* Custom */
+  font-size: 16pt;
+  color: dodgerblue;
+  margin-top: 0pt;
+  margin-bottom: 2pt;
+}
+
+h3, h4 {
+  font-size: 10.5pt;
+}
+
+h3 {
+  margin-top: 4pt;
+  margin-bottom: 2pt;
+}
+
+h4 {
+  margin-top: 0pt;
+  margin-bottom: 2pt;
+}
+
+hr {
+  /* Bootstrap defaults */
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+hr {
+  /* Bootstrap defaults */
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+ul {
+  font-size: 10.5pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  margin-left: -20pt;
+  list-style-type: none;
+}
+
+.align-items-center {
+  -ms-flex-align: center !important;
+  align-items: center !important;
+}
+
+.align-items-end {
+  -ms-flex-align: end !important;
+  align-items: flex-end !important;
+}
+
+.card {
+
+  /* Bootstrap defaults */
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  /* border: 1px solid rgba(0, 0, 0, 0.125); */
+  /* border-radius: 0.25rem; */
+  
+  /* Custom */
+  margin-bottom: 12pt;
+  padding: 12pt;
+  border: 0.75pt solid rgba(0, 0, 0, 0.125);
+  /* border-radius: 3pt; */
+  box-shadow: 2pt 2pt 2pt gray;
+}
+
+.card > hr {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col,
+.col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm,
+.col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md,
+.col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg,
+.col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl,
+.col-xl-auto {
+  /* Bootstrap defaults */
+  position: relative;
+  width: 100%;
+  /* padding-right: 15px; */
+  /* padding-left: 15px; */
+
+  /* Custom */
+  padding-right: 11.25pt;
+  padding-left: 11.25pt;
+}
+
+.col {
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-width: 100%;
+}
+
+.col-1 {
+  -ms-flex: 0 0 8.333333%;
+  flex: 0 0 8.333333%;
+  max-width: 8.333333%;
+}
+
+.col-4 {
+  -ms-flex: 0 0 33.333333%;
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+}
+
+.col-5 {
+  -ms-flex: 0 0 41.666667%;
+  flex: 0 0 41.666667%;
+  max-width: 41.666667%;
+}
+
+.col-6 {
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.col-7 {
+  -ms-flex: 0 0 58.333333%;
+  flex: 0 0 58.333333%;
+  max-width: 58.333333%;
+}
+
+.col-auto {
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  width: auto;
+  max-width: 100%;
+}
+
+.contact-info {
+  font-size: 10.5pt;
+}
+
+.d-block {
+  display: block !important;
+}
+
+.indent-1 {
+  padding-left: 8pt;
+}
+
+.justify-content-center {
+  -ms-flex-pack: center !important;
+  justify-content: center !important;
+}
+
+.m-auto {
+  margin: auto !important;
+}
+
+.mb-2,
+.my-2 {
+  /* Bootstrap defaults */
+  /* margin-bottom: 0.5rem !important; */
+
+  /* Custom */
+  margin-bottom: 6pt !important;
+}
+
+.ml-auto,
+.mx-auto {
+  margin-left: auto !important;
+}
+
+.mr-auto,
+.mx-auto {
+  margin-right: auto !important;
+}
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.no-gutters > .col,
+.no-gutters > [class*="col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.offset-1 {
+  margin-left: 8.333333%;
+}
+
+.p-0 {
+  padding: 0 !important;
+}
+
+.row {
+  /* Bootstrap defaults */
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  /* margin-right: -15px; */
+  /* margin-left: -15px; */
+
+  /* Custom */
+  margin-right: -11.25pt;
+  margin-left: -11.25pt;
+}
+
+.skills-and-interests {
+  padding-left: 12pt;
+}
+
+small,
+.small {
+  font-size: 80%;
+  font-weight: 400;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-muted {
+  color: #6c757d !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
